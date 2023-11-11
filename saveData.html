@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Example</title>
+</head>
+<body>
+
+    <label for="dataInput">Enter Data:</label>
+    <input type="text" id="dataInput">
+    <button onclick="saveData()">Save to Local Storage</button>
+
+    <script>
+        function saveData() {
+            var inputData = document.getElementById('dataInput').value;
+
+            // Save the data to local storage
+            localStorage.setItem('savedData', inputData);
+
+            alert('Data saved to local storage!');
+        }
+    </script>
+
+</body>
+</html>
